@@ -2,6 +2,14 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Next.js",
   "compilerOptions": {
+    "composite": false,
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": false,
+    "moduleResolution": "node",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -9,15 +17,13 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
+    "incremental": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "baseUrl": "."
+    "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.mjs"],
+  "include": [".", "next-env.d.ts"],
   "exclude": ["node_modules"]
 }
