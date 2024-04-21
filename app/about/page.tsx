@@ -43,7 +43,7 @@ export default function About() {
         </div>
       </section>
       <div className="container mx-auto mt-8 text-center">
-        <Button href="http://localhost:3001/home" className="ml-3">
+        <Button href="http://localhost:3000/home" className="ml-3">
           Back home
         </Button>
       </div>
